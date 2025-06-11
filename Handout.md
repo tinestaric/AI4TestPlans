@@ -74,3 +74,17 @@ Run your structured prompt. How does the output compare to the one from your "co
 
 ---
 
+## 🔧 Step 3 – Generate a System Prompt Automatically
+Use the provided tool to generate a system prompt using your components.
+
+- Try [OpenAI Playground](https://platform.openai.com/playground/prompts) or [Azure AI Foundry](https://ai.azure.com/) to experiment with system prompts.
+
+Compare outcomes:
+- User prompt only
+- System + User prompt
+
+**📊 Notes:**
+- How did it change the tone or structure?
+- Was it easier to guide?
+
+---
