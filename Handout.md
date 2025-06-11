@@ -132,3 +132,46 @@ Try the same prompt across multiple models.
 
 ---
 
+## 🧠 Step 7 – Prompt for Reasoning
+
+Try a different task that benefits from reasoning.  
+_Example: "Evaluate whether the test plan sufficiently covers negative cases. Provide feedback with reasoning."_
+
+### 🎯 Sample Reasoning Tasks:
+1. **Gap Analysis:** "Analyze this test plan and identify missing test scenarios. Explain why each scenario is important."
+2. **Risk Assessment:** "Review these test cases and rank them by risk level. Justify your rankings."
+3. **Test Optimization:** "Suggest which tests could be automated vs manual. Provide reasoning for each recommendation."
+
+**📝 Prompt:**
+```
+<your prompt>
+```
+
+**📊 Observations:**
+- What changed?
+- What did the model "understand" better?
+- How detailed was the reasoning?
+- Did it catch nuances you missed?
+
+### 🤔 How Reasoning Models Differ
+
+| Traditional Models | Reasoning Models |
+|-------------------|------------------|
+| Need explicit step-by-step guidance | Less need to "hold its hand" |
+| Rely heavily on examples | More value in constraints, less in examples |
+| Best for structured tasks | Excel at analysis and evaluation |
+| Follow patterns strictly | Can adapt and think through problems |
+| Output focused | Process + Output focused |
+
+### 📐 Guidelines for Reasoning Model Prompts
+
+| Component | Purpose | Example |
+|-----------|---------|---------|
+| **Instruction** | What's the goal? | "Analyze this test plan for completeness" |
+| **Constraints** | Format? Tone? Limits? | "Focus on edge cases, be concise" |
+| **Preferences** | What to prioritize? | "Prioritize security over performance tests" |
+| **Autonomy Range** | Should the model "think" or follow? | "Feel free to suggest alternative approaches" |
+| **Optional Revision Loop** | Can it check or improve itself? | "Review your suggestions and refine if needed" |
+
+---
+
