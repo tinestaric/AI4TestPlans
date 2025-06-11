@@ -175,3 +175,48 @@ _Example: "Evaluate whether the test plan sufficiently covers negative cases. Pr
 
 ---
 
+## 🔄 Step 8 – Pre/Postprocess Manually
+
+Break the problem down:
+- **Preprocess:** 
+  - Rewrite the user story for clarity
+  - Extract key components (actor, action, outcome)
+  - Convert into acceptance criteria
+  - Identify implicit requirements
+- **Postprocess:** 
+  - Reorganize raw output into standard format
+  - Remove hallucinations or irrelevant content
+  - Add missing edge cases
+  - Validate against original requirements
+
+**🛠️ Example Preprocessing:**
+```
+Original: "User wants to search products"
+↓
+Preprocessed: 
+- Actor: Registered/Guest User
+- Action: Search for products using keywords
+- Acceptance Criteria:
+  • Search returns relevant results
+  • Results are paginated
+  • Search history is saved (if logged in)
+```
+
+**🛠️ Notes:**
+```
+<space>
+```
+
+---
+
+## 🪄 Step 9 – Pre/Postprocess with Prompts and Models
+
+Use different prompts and models for each stage of the pipeline.
+
+| Stage         | Model Used | Prompt Summary           | Output Quality Notes |
+|---------------|------------|---------------------------|----------------------|
+| Preprocess    | Mini       | Extract key elements      |                      |
+| Generate Plan | GPT-4      | Test plan generation      |                      |
+| Evaluate Plan | Reasoning  | Spot gaps, improve plan   |                      |
+
+---
