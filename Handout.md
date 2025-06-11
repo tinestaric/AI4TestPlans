@@ -110,3 +110,25 @@ Share your results with a peer or group. Use this checklist to evaluate the outp
 ```
 
 ---
+
+## 🧪 Step 6 – Try Different Models
+
+Try the same prompt across multiple models.
+
+> 💡 Explore more models at [GitHub Marketplace Models](https://github.com/marketplace/models)
+
+### 🎯 What to Look For:
+- **Speed vs Quality trade-off**
+- **Token efficiency** (how concise is the output?)
+- **Instruction following** (does it stick to your format?)
+- **Creativity vs Consistency**
+
+| Model      | Output Summary      | Strengths             | Weaknesses            | Best Use Case |
+|------------|---------------------|------------------------|------------------------|---------------|
+| GPT-4      |                     |                        |                        |               |
+| GPT-3.5    |                     |                        |                        |               |
+| Claude     |                     |                        |                        |               |
+| Mini/Nano  |                     |                        |                        |               |
+
+---
+
