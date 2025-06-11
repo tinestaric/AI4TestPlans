@@ -220,3 +220,28 @@ Use different prompts and models for each stage of the pipeline.
 | Evaluate Plan | Reasoning  | Spot gaps, improve plan   |                      |
 
 ---
+
+## 💡 Final Thoughts / Next Steps
+
+### 🎯 Key Takeaways:
+- [ ] Structured prompts produce better results
+- [ ] Different models excel at different tasks
+- [ ] Preprocessing improves output quality
+- [ ] Reasoning models need different prompting strategies
+- [ ] Iteration is key to prompt engineering
+
+### 🚀 Action Items:
+1. What's one technique you'll implement immediately?
+2. Which model fits your use case best?
+3. How will you measure prompt effectiveness?
+
+### 🔗 Resources:
+- [How to be a Prompt Engineer](https://www.youtube.com/watch?v=q8xpDwjyNLY)
+- [Prompt Engineering Guide](https://www.promptingguide.ai/)
+- [OpenAI Best Practices](https://platform.openai.com/docs/guides/prompt-engineering)
+- [Anthropic's Prompt Engineering](https://docs.anthropic.com/claude/docs/prompt-engineering)
+
+### 💭 Reflection Questions:
+- What surprised you most about prompt engineering?
+- How might this change your testing workflow?
+- What other tasks could benefit from this approach?

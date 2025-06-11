@@ -1,0 +1,3 @@
+The model should create a test plan for the requirements the user will paste in.
+Usually user stories.
+The test plan should be in lines that can be copied to an excel sheet.

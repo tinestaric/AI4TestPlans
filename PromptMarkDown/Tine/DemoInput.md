@@ -1,0 +1,1 @@
+As a production planner I want to be able to setup extended texts for items, resources and standard text for assembly documents, so that I can add these extended texts as additional information to items, resources and standard text on any assembly document, as line(s) underneath the related item, resource or standard text line.

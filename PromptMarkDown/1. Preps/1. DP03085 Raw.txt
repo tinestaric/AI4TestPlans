@@ -1,0 +1,1955 @@
+
+Target release
+
+winter22
+
+Epic Link
+
+FPS-10473: DP03085 - Adjustments SUP Recording & SUP Production (VSH)
+Done
+
+Zone
+
+Innovation
+
+Product Manager
+
+@Matthijs van Dijk 
+
+Business Specialist
+
+@Sebastiaan van Mierlo 
+
+Project Manager
+
+@Lysanne van Harn @Bianca Pelle 
+
+Developer
+
+@Amber Bogerd @Luc van Vugt 
+
+Quality Engineer
+
+@Ron van der Goor 
+
+Documentalist
+
+@Hans Visser 
+
+Stakeholders/Customers
+
+Visser & Smit Hanab (VSH)
+
+ 
+
+ 
+
+ 
+
+Table of Contents
+Table of Contents
+Business Case
+Introduction
+Requested by
+😵‍💫 Problem description
+♟️ Value proposition (customer)
+🏢 Business Value (4PS)
+🎯 Epic Goal(s)
+👍🏼 Success metrics
+User flow
+Refinement & Test Objectives
+Project information
+Documentation summary
+User stories
+User story 1. SEP Recording Import  
+User story 2. Change Unit Price  
+User story 3. Alternative Unit Price Code  
+User story 4. Bill-to Customer No on SUP Production  
+User story 5. Signature for SUP Production  
+User story 6. E-mail SUP Production  
+User story 7. Copy SUP Production  
+Test Plan breakdown
+User interaction and design
+Business Case
+In this first section of the document, we are going to describe what we/the customers would like to achieve with this Business Case. The focus is on the big picture and not the details.
+
+When creating a new case it is also important to describe how this fits in with the 4PS strategy.
+
+Introduction
+"Our mission is to empower every person and every organization on the planet to achieve more". Microsoft has been using this mission for years. As a trusted Microsoft Partner, we at 4PS are an important part of the Microsoft ecosystem. We have been using Microsoft technology to develop, deliver and implement applications for the construction industry for over 2 decades. That's what we bring to our partnership with Microsoft: knowledge, experience, and relationships in the construction industry.
+
+Therefore, our vision is to enable every company in the construction industry to achieve more!
+
+We unlock our "Achieve more" vision through several key themes. The themes that apply to this Business Case are:
+
+
+Dynamics 365 Business Central
+
+Cloud
+
+Mobility
+
+Chain integration
+
+Data-driven 
+ 
+
+Requested by
+Name
+
+VSH - Erik Bosch
+
+Business Unit
+
+
+Construction
+
+Installation
+
+GWW
+
+UK
+
+Belgium
+
+Germany
+
+International
+
+Development / General
+Date
+
+Jul 29, 2022 
+
+ 
+
+😵‍💫 Problem description
+Visser & Smit Hanab (VSH) has reported multiple improvements on various 4PS Construct domains. This DR focuses on the Service & maintenance domain and specifically on optimization points for the SUP Recording and SUP Production screens and functions. 
+
+It’s decided that these optimization points for VSH need to be done (customer commitment). 
+
+Part of the "pain" for VSH is in the amount of repetitive manual actions, such as manually modifying multiple lines or importing lines. In addition, the functionality to sign and send a production recording by mail is currently missing. So, this development request is a combination of simplifying actions and some optimizations for SUP recording and SUP production.
+
+ 
+
+♟️ Value proposition (customer)
+Fewer manual actions while working with the SUP recording and/or SUP production.
+
+Faster importing SUP recording lines. 
+
+Improved end-user interaction.
+
+ 
+
+🏢 Business Value (4PS)
+Improve end-user interaction by reducing the number of manual actions. 
+
+ 
+
+Market Size: Any customer working with the functionality of Serice & Maintenance SUP. Maybe some processes are specific to GWW companies, but that does not make this functionality unusable for the other companies.
+
+Price: No pricing. This is part of the standard Service & Maintenance module. 
+
+Sales Promise: Not applicable. Pushed/available to/for every customer.
+
+Sales approach: Not applicable. Pushed/available to/for every customer.
+
+ 
+
+🎯 Epic Goal(s)
+We think that by implementing several improvements in the SUP screens and adding/changing some functions,
+
+We will reduce the amount of manual work during these processes and/or improve user interaction (and happiness),
+
+For all users working with SUP functionality (mostly service coordinators)
+
+ 
+
+👍🏼 Success metrics
+When the development is finished, we know we succeeded when:
+
+US1: It’s easier/faster to import SEP lines by using an importing file.
+
+US2: It’s now possible to change the predefined unit price, by allowing this in the selected price book.
+
+US3: Removed the number of screens to work with the Alternative Unite Price.
+
+US4: Fewer clicks to change the bill-to-customer on the SUP screen.
+
+US5: It’s possible to sign the SUP production.
+
+US6: It’s possible to e-mail the SUP production from 4PS Construct, reducing the need of exporting the PDF and using Outlook to mail. 
+
+US7: Implementing a ‘full-copy' action for the SUP production. Less work to fill in a copied SUP Production. 
+
+User flow
+Multiple processes, so for this DR not applicable. Flows have been described per user story to clarify the process if necessary.   
+
+Refinement & Test Objectives
+After the section above has been approved, the section below needs to be filled during or after the refinement. Based on the user stories the Quality Engineer will plan a test objectives meeting. This section of the user stories will be filled during that meeting.
+
+Project information
+Refinement
+
+Jun 8, 2023 
+
+Documentation?
+
+Should have
+
+Test session?
+
+Only internal testing. Demo’s with customer  @ PMC → invite VSH once several user stories are done. 
+
+What’s New Video?
+
+Yes
+
+Localisation
+
+Looks like the current SUP functionality is only available for the NL localisation. Since these are slight changes to improve the current functionality, these adjustments can be made for the NL localization. 
+
+Webinar
+
+Combination of PowerPoint and Demo
+
+Documentation summary
+User story SEP Recording Import
+
+We will make it possible to import an external file (csv) that contains Recording data. By importing the external file, the process of manually copying Excel lines into 4PS Construct will be history. 
+
+User story Change Unit Price
+
+We will make it possible to change Unit Prices. Currently, this action is blocked because the Unit Price must match with the Unit Price that’s registered for a price book. Enabling this can be set up on the price book.  
+
+User story Alternative Unit Price Code
+
+We will remove a non-informative screen that will pop up once a duplicated Alternative Unit Price Code is registered. This non-informative screen only results in more user clicks. 
+
+User story Bill-to Customer No on SUP Production
+
+We will investigate (and change) if we can change the way how the Bill-to-Customer no. needs to be set. 
+
+User story Signature for SUP Production
+
+We will be making it possible to digitally sign the SUP Production by using the 4PS Signature Pad. (No 3rd signing party necessary). We will eliminate the process of printing a report, signing it, scanning it, and uploading it. 
+
+User story E-mail SUP Production
+
+We will make it possible to e-mail the SUP Production right from 4PS Construct. We will eliminate the process of exporting a report and mailing it using Outlook. 
+
+User story Copy SUP Production
+
+We will make it possible to fully-copy a SUP Production, and not only the Production Lines. 
+
+ 
+
+ 
+
+User stories
+User story 1. SEP Recording Import FPS-9912: User Story 1. SEP Recording Import
+Rejected
+ 
+As a Service Coordinator, 
+I want to be able to import a CSV file with SEP recording data.
+So that I can create an import file and import that into 4PS Construct so that I don’t have to work with copy/paste options to get my data into 4PS Construct. 
+This can be achieved by Creating a new XML import that imports SEP recording data. I need to start this import process (XML port) from the SEP Recording page. 
+
+Notes
+Import Action
+
+Create a new button to start the import of SEP recording data
+
+Name: “Import Recording” (NL: Importeer Opname”). 
+
+Place the button on page: SUP Recording Lines (11125295, List)
+
+Inside the Action menu
+
+Default hidden
+
+ 
+
+Importfile
+
+Columns that need to be inserted: 
+
+Data needs to be inserted into table SUP Recording Line (11071772)
+
+A
+
+B
+
+C
+
+Eenheidsprijs Code
+
+Alternatieve Eenheidsprijs Code
+
+Quantity
+
+Unit Price Code (50, Code)
+
+Alternative Unit Price Code (55, Code)
+
+Pre-Recording Quantity (90, Decimal)
+
+Quantity Recording (200, Decimal)
+
+Insert the quantity based on the Unit Price Status (11013010, Option) of the Service Order 
+
+If Unit Price Status (11013010, Option) = Pre-Recording (vooropname) >>> Insert data from column C into Pre-Recording Quantity (90, Decimal)  (table: SUP Recording Line (11071772))
+
+If Unit Price Status (11013010, Option) = Recording (opname) >>> Insert data from column C into Quantity Recording (200, Decimal)  (table: SUP Recording Line (11071772))
+
+ 
+
+Import Pop-up
+
+Filling the import file with data is step 1. 
+
+This import data needs to be enriched by the user that will import the file. 
+
+Create a pop-up with the following options: 
+
+Order No. Customer (NL: Opdrachtnummer klant) >>> Insert into: Order No. Customer (350, Text)
+
+Your Reference (NL: Uw Referentie) >>> Insert into:   Your Reference (360, Text)
+
+x Part (NL: Onderdeel) >>> Insert into:  Part (190, Code)
+
+x Bill-to Customer No. (Factureren aan) >>> Insert into: Bill-to Customer No. (160, Code)
+
+X= All fields need to have a zoom function to all available options. Like for example ‘Bill-to Customer No.’
+
+
+Insert the data given into the SUP Recording Line (11071772) table COMBINED with the data that’s inside the importfile
+
+If possible, predefine the values of: 
+
+Order No. Customer >> with the Order No. that's on the Service order (Service Order (11012823) // Order No. Customer (810, Text))
+
+Bill-To Customer No. >> with the Bill-to Customer No. that's on the Service order (Service Order (11012823) // Bill-to Customer No. (40, Code))
+
+ 
+
+This user story may be dropped. It is possible to use the standard BC functionality 'edit in Excel' on the SUP Unit Price page. 
+
+This standard functionality is a lot more flexible than an XML port and is directly usable by VSH. Discuss with VSH whether this 'edit in Excel' functionality is sufficient.
+See FPS-9912: User Story 1. SEP Recording Import
+Rejected
+ for follow-up. The estimates below are given for the XML port functionality. 
+
+ 
+
+Time estimate
+Dev: 16hr
+Test: 16hr
+
+Test Automation: = dev time
+
+Test objectives
+What should be tested?
+
+Cases added to testrail?
+
+Automate with AL?
+
+Automate with RX?
+
+ 
+
+
+Yes
+
+No
+
+TBD
+
+Yes
+
+No
+
+TBD
+
+Yes
+
+No
+
+TBD
+ 
+
+User story 2. Change Unit Price FPS-9913: User Story 2. Change Unit Price
+Done
+ 
+As a Service Coordinator, 
+I want to be able to change the default Unit Price of a Unit Code. 
+So that I can Fix some gaps between the Price books of all involved parties. 
+This can be achieved by changing the current functionality that prevents the Unit Price from being changed. This blocking bypass functionality needs to be configured on the price book and applies for all Unit Codes (and Unit Prices) inside the price book. 
+
+ 
+
+As a Service Coordinator, 
+I want to be able to see if a Unit Price has been adjusted. 
+So that I can see that a Unit Price has been changed and eventually can inform why…
+This can be achieved by see below.
+
+Notes
+Current process
+
+Select Price Book Code on the service order
+
+Add Unit Price Codes (from the Price Book) on the SUP recording
+
+Changing the Unit Price of a Unit Price Code will result into an error. 
+
+
+ 
+
+
+Desired process
+
+Add a new boolean on the Service Price Book to bypass this error:
+
+Name: “Allow changing Unit Prices” (Caption: “Eenheidsprijs aanpassen toestaan”)
+
+Place the boolean field on page: Service Price Book (11125267, Document)
+
+Below the currently available ‘expired’ boolean
+
+If “Allow changing Unit Prices” = False >> don’t change anything. 
+
+If “Allow changing Unit Prices” = True >> Allow the user to change the Unit Price. Even if this will result in a difference between the Price Book Unit Price and Recording Unit Price. 
+
+Changing Unit Prices for SUP Recording should only be possible if Service Order (11012823) // Unit Price Status (11013010, Option) = Pre-Recording (vooropname) OR Recording (opname) 
+
+Changing Unit Prices for SUP Production should only be possible if SUP Production (11071773) // Status (40, Option) = Proposal
+
+ 
+
+To show whether a user has modified the unit prices create a new date/time and modified by fields:
+
+Tables: SUP Recording Line (11071772) / Page: SUP Recording Lines (11125295, List) and SUP Production Line SF (11125297, ListPart) / Page: SUP Production Line (11071774)
+
+Unit price modified on (Caption: “Eenheidsprijs aangepast op”)
+
+Unit price modified by (Caption: “Eenheidsprijs aangepast door”)
+
+If the unit price is not modified these fields remain blank. 
+
+ 
+
+Unit price change options: 
+
+Pricebook Unit Price: If it is allowed to edit the unit price: make the 'unit price' field editable.
+
+Pricebook Unit Price: If it is not allowed to adjust the unit price: make the 'unit price' field read-only (this prevents a user error)
+
+Alternative Unit Price: If working with an alternative unit price code: Then the unit price field must be editable even when Allow changing Unit Prices is disabled. However, the constraints on changing Unit Prices for SUP Recordings and SUP Productions mentioned above still hold.
+
+Update 20231120
+Language isn’t the best vehicle to get the wanted logic expressed, so, we sat together and agreed upon the following flow charts that determine whether or nor the “Unit Price” fields could be edited or not, on a SUP Recording Line (left chart) and SUP Production Line (right chart).
+
+
+ 
+
+Dev Notes:
+When creating the “Allow Changing Unit Prices”-functionality, we found an old/other way modifications on the Internal SUP Lines were allowed, “Allow Internal SUP Line Modif.”. 
+
+So we discussed this fact and figured we could obsolete this function and recreate the functionality within the new “Allow Changing Unit Prices” on the “Service Price Book”. Therefore a DataConversion was needed.
+
+Time estimate
+Dev: 8hr 
+Test: 8hr
+
+Test Automation: = dev time
+
+Test objectives
+What should be tested?
+
+Cases added to testrail?
+
+Automate with AL?
+
+Automate with RX?
+
+ 
+
+
+Yes
+
+No
+
+TBD
+
+Yes
+
+No
+
+TBD
+
+Yes
+
+No
+
+TBD
+ 
+
+ 
+
+ 
+
+User story 3. Alternative Unit Price Code FPS-9914: User Story 3. Alternative Unit Price Code
+Done
+ 
+As a Service Coordinator, 
+I want that the Alt. Unit Price Code pop-up to disappear. 
+So that I don’t have to close this non-effective and not informative pop-up
+This can be achieved by Not showing the pop-up if similar alt. Unit Price Code is entered. 
+
+Notes
+The current heads-up overview has no added value. Please remove this. 
+
+ 
+
+Current Process
+
+Add new Alternative Unit Price Code
+
+
+2. Add the same Alt. Unit Price Code in a second new row. A Pop-up message will be shown. 
+
+
+ 
+
+3. Click on Yes. 
+
+Here is shown in which service order the same Alt. Unit Price Code is used. 
+This has no added value and only results in more clicks. 
+
+
+Time estimate
+Dev: 30min
+Test: 1hr
+
+Test Automation: = 0 (included in user story 2).
+
+Test objectives
+What should be tested?
+
+Cases added to testrail?
+
+Automate with AL?
+
+Automate with RX?
+
+ 
+
+
+Yes
+
+No
+
+TBD
+
+Yes
+
+No
+
+TBD
+
+Yes
+
+No
+
+TBD
+ 
+
+ 
+
+ 
+
+User story 4. Bill-to Customer No on SUP Production FPS-9915: User Story 4. Bill-to Customer No on SUP Production
+Rejected
+ 
+As a Service Coordinator, 
+I want to be able to easily change the Bill-to Customer code from the SUP Production Lines screen. 
+So that I can adjust the Bill-to Customer directly without opening multiple zoom pages.
+This can be achieved by see below.
+
+ 
+
+Check if it’s possible to change. 
+
+Current functionality: Changing Bill-to Customer on SUP Production line will open the SUP Recording Line. Changing the Bill-to Customer on the SUP Recording Line will change (or display slightly smiling face ) the Bill-to Customer on the SUP Production line. 
+
+Notes
+It’s technically not possible to change his. A flowfield is used on the SUP production line. No adjustments are possible to make the interaction with the flowfield 'better'. This user story will be dropped.
+
+Time estimate
+Dev:
+Test:
+
+Test objectives
+What should be tested?
+
+Cases added to testrail?
+
+Automate with AL?
+
+Automate with RX?
+
+ 
+
+
+Yes
+
+No
+
+TBD
+
+Yes
+
+No
+
+TBD
+
+Yes
+
+No
+
+TBD
+ 
+
+ 
+
+ 
+
+User story 5. Signature for SUP Production FPS-9916: User Story 5. Signature for SUP Production
+Done
+ 
+As a Service Coordinator, 
+I want to be able to sign the SUP Production with a signature. 
+So that I don’t have to print the PDF, sign it, scan it, upload it, and sent it to the Customer. 
+This can be achieved by making it possible to use the currently available ‘Signature pad’ (used on service- and workorders) on the SUP Production card. 
+
+Notes
+Create a new button to sign the SUP Production 
+
+Name: “Signature” (Caption: “Handtekening”)
+
+Place the button on the page: SUP Production (11125296, Card)
+
+Inside the Related menu
+
+Create a new table and page for these signatures. 
+
+Name: SUP Production Signature
+
+Please also check the current functionality that is created to sign the Service-/Workorders using 4PS Construct. 
+
+Tabel: Service Order Signature (11020349)
+
+Page: Service Order Signature (11125109, Card)
+
+On the SUP Production Signature page, it needs to be possible to add a signature by using the 4PS Signature Pad Extension
+
+Extension: 4PS Signature Pad W1
+
+App ID: 2b429c18-bb83-4779-9cae-e693ccd153d4
+
+Page: Signature Pad 4PS (11129510, StandardDialog)
+
+Page preview for SUP Production Signature
+
+
+For SUP production, a signature will always be inserted manually. Please remove this indicator. 
+
+Only for status Proposal it should be possible to add/replace/delete the signature. 
+
+After signing the SUP Production add a popup: “Do you want to change the status of the SUP Production to Offered?” (Caption: “Wil je de status van de Productieopname wijzigen naar Uitgebracht?")
+
+Technical notes
+
+a SUP Production is identified by (primary key) “Service Order No.” and “Seq. No.”. A signature should be linked to a unique SUP production record, so, to a combination of those two primary key fields.
+
+There should only be one signature per SUP production
+
+
+ 
+
+Time estimate
+Dev: 8hr
+Test: 8hr
+
+Test Automation: = dev time
+
+Test objectives
+What should be tested?
+
+Cases added to testrail?
+
+Automate with AL?
+
+Automate with RX?
+
+ 
+
+
+Yes
+
+No
+
+TBD
+
+Yes
+
+No
+
+TBD
+
+Yes
+
+No
+
+TBD
+ 
+
+ 
+
+ 
+
+User story 6. E-mail SUP Production FPS-9917: User Story 6. E-mail SUP Production
+Done
+ 
+As a Service Coordinator, 
+I want to be able to mail the SUP Production 
+So that I can use 4PS Construct to mail the SUP Production and don’t have to create a PDF report and mail it manually to the customer. 
+This can be achieved by Creating a new e-mail template for the SUP production AND attaching the PDF SUP production report to the mail.  
+
+ 
+
+Notes
+Mail template
+
+Create a new Mail Template 
+
+Type: Service
+
+Name: SUP Production 
+
+Source Table: <SUP production>
+
+Table: Mail Template (11229450)
+
+ 
+
+Mail SUP Production
+
+Create an ‘e-mail’ action button 
+
+Name: e-mail SUP production
+
+Page: SUP Production (11125296, Card)
+
+Inside the action menu
+
+This new e-mail is based on the newly created Mail Template
+
+When clicking on the email action the SUP Production report needs to be created and added to the mail as an attachment. 
+
+Therefore, use the report selection. 
+
+The report that is set for usage: Production Recording
+
+Table: Report Selections (77)
+
+Filter: Usage (1, Option, PK) = Service - Unit Price Production Recording
+
+By using the report selection custom reports can also be e-mailed. 
+
+
+ 
+
+Time estimate
+Dev: 16hr
+Test: 16hr
+
+Test Automation: = dev time
+
+Test objectives
+What should be tested?
+
+Cases added to testrail?
+
+Automate with AL?
+
+Automate with RX?
+
+ 
+
+
+Yes
+
+No
+
+TBD
+
+Yes
+
+No
+
+TBD
+
+Yes
+
+No
+
+TBD
+ 
+
+ 
+
+ 
+
+ 
+
+User story 7. Copy SUP Production FPS-9918: User Story 7. Copy SUP Production
+Done
+ 
+As a Service Coordinator, 
+I want to be able to copy a total SUP Production
+So that I can base the next production on a previous one without having to fill in amounts, remarks, etc. 
+This can be achieved by creating a new copy action that copies a complete SUP production. 
+
+Notes
+ 
+
+Copy button 
+
+Create a 'copy’ action button 
+
+Name: Copy SUP production (NL: “Kopieer SEP Productie”)
+
+Page: SUP Production List (11125302, List)
+
+Inside the action menu
+
+ 
+
+Copy Action
+
+The SUP Production is based on a Header and lines. 
+
+Header
+
+Obtain the highest sequence number and increase it by 1 >> Place it into Seq. No. (15, Integer, PK)
+
+Copy, get, or leave the header data based on the scheme below.
+
+Name
+
+Field
+
+Action
+
+Service Order
+
+Service Order No. (10, Code, PK)
+
+Retrieve this from the origin SUP production
+
+Production date
+
+Production Date (20, Date)
+
+Register the current date when executing the copy action
+
+Production Time
+
+Production Time (22, Time)
+
+Register the current time when executing the copy action
+
+Status
+
+Status (40, Option)
+
+Do not copy this from the origin SUP Production - Has to be ‘proposal’ at all times
+
+Total Production value
+
+Total Production Value (50, Decimal)
+
+Has to be zero at all times
+
+Register Date: Leave blank
+
+Register Date (60, Date)
+
+Do not copy this from the origin SUP Production
+
+Remarks
+
+Remarks (30, Text)
+
+Retrieve this from the origin SUP production
+
+Lines:
+
+Copy all data from the origin SUP Production Lines. - including production amounts (but Production must be zero, as is decided in the customer demo)
+
+Looks like the already present ‘Copy SUP Production Lines’ but in this case, it must copy all data.
+
+Use ‘standard’ copy functionality as used on other pages. 
+
+add Boolean to copy lines.
+
+ 
+
+Time estimate
+Dev: 16hr
+Test: 4hr
+
+Test Automation: = dev time
+
+Test objectives
+What should be tested?
+
+Cases added to testrail?
+
+Automate with AL?
+
+Automate with RX?
+
+ 
+
+
+Yes
+
+No
+
+TBD
+
+Yes
+
+No
+
+TBD
+
+Yes
+
+No
+
+TBD
+ 
+
+ 
+
+ 
+
+ 
+
+Test Plan breakdown
+For more information about a Test Plan breakdown, visit: 
+Test Plan breakdown 
+
+User Story
+
+Area 1
+
+Area 2
+
+Area 3
+
+#
+
+Scenario
+
+Positive-negative
+
+Prio
+
+Manual/AL
+
+Notes
+
+1 - SUP Recording Import
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abolished
+
+2 - Change Unit Price
+
+Price Book
+
+Service Order
+
+SUP Recording Lines
+
+1
+
+Change unit price when Allow Changing Unit Price equals false and Unit Price Status equals Pre-Recording
+
+X
+
+ 
+
+AL
+
+Check new fields; no error message
+
+2 - Change Unit Price
+
+Price Book
+
+Service Order
+
+SUP Recording Lines
+
+2
+
+Change unit price when Allow Changing Unit Price equals true and Unit Price Status equals Pre-Recording
+
+ 
+
+ 
+
+AL
+
+ 
+
+2 - Change Unit Price
+
+Price Book
+
+Service Order
+
+SUP Recording Lines
+
+3
+
+Change unit price when Allow Changing Unit Price equals false and Alternative Unit Price Code and Unit Price Status equals Pre-Recording
+
+ 
+
+ 
+
+AL
+
+ 
+
+2 - Change Unit Price
+
+Price Book
+
+Service Order
+
+SUP Recording Lines
+
+4
+
+Change unit price when Allow Changing Unit Price equals true and Alternative Unit Price Code and Unit Price Status equals Pre-Recording
+
+ 
+
+ 
+
+AL
+
+ 
+
+2 - Change Unit Price
+
+Price Book
+
+Service Order
+
+SUP Recording Lines
+
+5
+
+Change unit price when Allow Changing Unit Price equals false and Unit Price Status equals Recording
+
+X
+
+ 
+
+AL
+
+ 
+
+2 - Change Unit Price
+
+Price Book
+
+Service Order
+
+SUP Recording Lines
+
+6
+
+Change unit price when Allow Changing Unit Price equals true and Unit Price Status equals Recording
+
+ 
+
+ 
+
+AL
+
+ 
+
+2 - Change Unit Price
+
+Price Book
+
+Service Order
+
+SUP Recording Lines
+
+7
+
+Change unit price when Allow Changing Unit Price equals false and Alternative Unit Price Code and Unit Price Status equals Recording
+
+ 
+
+ 
+
+AL
+
+ 
+
+2 - Change Unit Price
+
+Price Book
+
+Service Order
+
+SUP Recording Lines
+
+8
+
+Change unit price when Allow Changing Unit Price equals true and Alternative Unit Price Code and Unit Price Status equals Recording
+
+ 
+
+ 
+
+AL
+
+ 
+
+2 - Change Unit Price
+
+Price Book
+
+Service Order
+
+SUP Recording Lines
+
+9
+
+Change unit price when Allow Changing Unit Price equals false and Unit Price Status not equals Pre-Recording or Recording
+
+X
+
+ 
+
+AL
+
+ 
+
+2 - Change Unit Price
+
+Price Book
+
+Service Order
+
+SUP Recording Lines
+
+10
+
+Change unit price when Allow Changing Unit Price equals true and Unit Price Status not equals Pre-Recording or Recording
+
+X
+
+ 
+
+AL
+
+ 
+
+2 - Change Unit Price
+
+Price Book
+
+Service Order
+
+SUP Recording Lines
+
+11
+
+Change unit price when Allow Changing Unit Price equals false and Alternative Unit Price Code and Unit Price Status equals Production Recording
+
+X
+
+ 
+
+AL
+
+Unit Price Status must not equal Pre-Recording or Recording
+
+2 - Change Unit Price
+
+Price Book
+
+Service Order
+
+SUP Recording Lines
+
+12
+
+Change unit price when Allow Changing Unit Price equals true and Alternative Unit Price Code and Unit Price Status equals Production Recording
+
+X
+
+Low
+
+AL
+
+Unit Price Status must not equal Pre-Recording or Recording
+
+2 - Change Unit Price
+
+Price Book
+
+Service Order
+
+SUP Recording Lines
+
+13
+
+Change unit price when Allow Changing Unit Price equals false and Alternative Unit Price Code and Unit Price Status equals Finished
+
+X
+
+Low
+
+AL
+
+Unit Price Status must not equal Pre-Recording or Recording
+
+2 - Change Unit Price
+
+Price Book
+
+Service Order
+
+SUP Recording Lines
+
+14
+
+Change unit price when Allow Changing Unit Price equals true and Alternative Unit Price Code and Unit Price Status equals Finished
+
+X
+
+ 
+
+AL
+
+Unit Price Status must not equal Pre-Recording or Recording
+
+2 - Change Unit Price
+
+Price Book
+
+Service Order
+
+SUP Recording Lines
+
+14A
+
+Empty Price Modified At and Price Modified by when Unit Price Code is filled in line with Alternative Unit Price Code
+
+ 
+
+ 
+
+AL
+
+ 
+
+2 - Change Unit Price
+
+Price Book
+
+SUP Production
+
+ 
+
+15
+
+Change unit price when Allow Changing Unit Price equals false and Status equals Proposal and Unit Price Status equals Production Recording
+
+X
+
+ 
+
+AL
+
+ 
+
+2 - Change Unit Price
+
+Price Book
+
+SUP Production
+
+ 
+
+16
+
+Change unit price when Allow Changing Unit Price equals true and Status equals Proposal and Unit Price Status equals Production Recording
+
+ 
+
+ 
+
+AL
+
+ 
+
+2 - Change Unit Price
+
+Price Book
+
+SUP Production
+
+ 
+
+17
+
+Change unit price when Allow Changing Unit Price equals false and Alternative Unit Price Code and Unit Price Status equals Production Recording
+
+ 
+
+ 
+
+AL
+
+ 
+
+2 - Change Unit Price
+
+Price Book
+
+SUP Production
+
+ 
+
+18
+
+Change unit price when Allow Changing Unit Price equals true and Alternative Unit Price Code and Unit Price Status equals Production Recording
+
+ 
+
+ 
+
+AL
+
+ 
+
+2 - Change Unit Price
+
+Price Book
+
+SUP Production
+
+ 
+
+19
+
+Change unit price when Allow Changing Unit Price equals false and Status equals Offered and Unit Price Status equals Production Recording
+
+X
+
+ 
+
+AL
+
+Status must not equal Proposal
+
+2 - Change Unit Price
+
+Price Book
+
+SUP Production
+
+ 
+
+20
+
+Change unit price when Allow Changing Unit Price equals true and Status equals Offered and Unit Price Status equals Production Recording
+
+X
+
+Low
+
+ 
+
+Status must not equal Proposal
+
+No TestRail case needed, data combination test applied
+
+2 - Change Unit Price
+
+Price Book
+
+SUP Production
+
+ 
+
+21
+
+Change unit price when Allow Changing Unit Price equals false and Status equals Approved and Unit Price Status equals Production Recording
+
+X
+
+Low
+
+ 
+
+Status must not equal Proposal
+
+No TestRail case needed, data combination test applied
+
+2 - Change Unit Price
+
+Price Book
+
+SUP Production
+
+ 
+
+22
+
+Change unit price when Allow Changing Unit Price equals true and Status equals Approved and Unit Price Status equals Production Recording
+
+X
+
+ 
+
+AL
+
+Status must not equal Proposal
+
+2 - Change Unit Price
+
+Price Book
+
+SUP Production
+
+ 
+
+23
+
+Change unit price when Allow Changing Unit Price equals false and Status equals Expired and Unit Price Status equals Production Recording
+
+X
+
+Low
+
+ 
+
+Status must not equal Proposal
+
+No TestRail case needed, data combination test applied
+
+2 - Change Unit Price
+
+Price Book
+
+SUP Production
+
+ 
+
+24
+
+Change unit price when Allow Changing Unit Price equals true and Status equals Expired and Unit Price Status equals Production Recording
+
+X
+
+Low
+
+ 
+
+Status must not equal Proposal
+
+No TestRail case needed, data combination test applied
+
+2 - Change Unit Price
+
+Price Book
+
+SUP Production
+
+ 
+
+25
+
+Change unit price when Allow Changing Unit Price equals false and Status equals Rejected and Unit Price Status equals Production Recording
+
+X
+
+Low
+
+ 
+
+Status must not equal Proposal
+
+No TestRail case needed, data combination test applied
+
+2 - Change Unit Price
+
+Price Book
+
+SUP Production
+
+ 
+
+26
+
+Change unit price when Allow Changing Unit Price equals true and Status equals Rejected and Unit Price Status equals Production Recording
+
+X
+
+Low
+
+ 
+
+Status must not equal Proposal
+
+No TestRail case needed, data combination test applied
+
+2 - Change Unit Price
+
+Price Book
+
+SUP Production
+
+ 
+
+27
+
+Change unit price when Allow Changing Unit Price equals false and Alternative Unit Price Code and Unit Price Status equals Production Recording
+
+ 
+
+ 
+
+AL
+
+Status must not equal Proposal
+
+2 - Change Unit Price
+
+Price Book
+
+SUP Production
+
+ 
+
+28
+
+Change unit price when Allow Changing Unit Price equals true and Alternative Unit Price Code and Unit Price Status equals Production Recording
+
+ 
+
+ 
+
+AL
+
+Status must not equal Proposal
+
+2 - Change Unit Price
+
+Service and Maintenance Setup
+
+ 
+
+ 
+
+28A
+
+Remove checkbox Allow Internal SUP Line Modification
+
+ 
+
+ 
+
+ 
+
+No TA or TestRail case needed
+
+2 - Change Unit Price
+
+Company
+
+Price Book
+
+Service and Maintenance Setup
+
+28B
+
+Set Allow Changing Unit Price to false in Price Books where Allow Internal SUP Line Modification was false
+
+ 
+
+ 
+
+ 
+
+Data conversion
+
+Theoretical case: default value is false anyway.
+
+2 - Change Unit Price
+
+Company
+
+Price Book
+
+Service and Maintenance Setup
+
+28C
+
+Set Allow Changing Unit Price to true in Price Books where Allow Internal SUP Line Modification was true
+
+ 
+
+ 
+
+ 
+
+Data conversion
+
+3 - Alternative Unit Price Code
+
+Price Book
+
+SUP Recording Lines
+
+ 
+
+29
+
+Add second line with same Alternative Unit Price Code
+
+ 
+
+ 
+
+ 
+
+Check that no confirmation appears
+
+No TestRail case needed, since only code has been removed which had no added value
+
+4 - Bill-to-Customer No on SUP Production
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Abolished
+
+5 - Signature for SUP Production
+
+SUP Production
+
+Signature
+
+ 
+
+30
+
+Add signature before offering with confirming offering
+
+ 
+
+ 
+
+AL
+
+ 
+
+5 - Signature for SUP Production
+
+SUP Production
+
+Signature
+
+ 
+
+31
+
+Add signature before offering without confirming offering
+
+ 
+
+ 
+
+AL
+
+ 
+
+5 - Signature for SUP Production
+
+SUP Production
+
+Signature
+
+ 
+
+32
+
+Add signature after offering
+
+X
+
+ 
+
+AL
+
+ 
+
+5 - Signature for SUP Production
+
+SUP Production
+
+Signature
+
+ 
+
+33
+
+Change signature before offering with confirming offering
+
+ 
+
+Low
+
+ 
+
+No TestRail case needed
+
+5 - Signature for SUP Production
+
+SUP Production
+
+Signature
+
+ 
+
+34
+
+Change signature before offering without confirming offering
+
+ 
+
+Low
+
+ 
+
+No TestRail case needed
+
+5 - Signature for SUP Production
+
+SUP Production
+
+Signature
+
+ 
+
+35
+
+Change signature after offering
+
+X
+
+Low
+
+ 
+
+No TestRail case needed
+
+5 - Signature for SUP Production
+
+SUP Production
+
+Signature
+
+ 
+
+36
+
+Delete signature before offering
+
+ 
+
+ 
+
+AL
+
+ 
+
+5 - Signature for SUP Production
+
+SUP Production
+
+Signature
+
+ 
+
+37
+
+Delete signature after offering
+
+X
+
+ 
+
+AL
+
+ 
+
+6 - Email SUP Production
+
+SUP Production
+
+Email
+
+Template
+
+38
+
+Create email template
+
+ 
+
+Low
+
+ 
+
+Used in test case 39 and 40
+
+6 - Email SUP Production
+
+SUP Production
+
+Email
+
+Create and Send
+
+39
+
+Create and send email with attached report from report selection
+
+ 
+
+ 
+
+AL
+
+ 
+
+6 - Email SUP Production
+
+SUP Production
+
+Email
+
+Create and Send
+
+40
+
+Create and send email when report selection is empty
+
+X
+
+ 
+
+AL
+
+ 
+
+7 - Copy SUP Production
+
+SUP Production
+
+Copy
+
+ 
+
+41
+
+Copy SUP production with lines when Copy Lines equals false
+
+ 
+
+ 
+
+AL
+
+Check header fields; check no lines have been copied
+
+7 - Copy SUP Production
+
+SUP Production
+
+Copy
+
+ 
+
+42
+
+Copy SUP production with lines when Copy Lines equals true
+
+ 
+
+ 
+
+AL
+
+Check header fields and lines
+
+User interaction and design
+
+ 

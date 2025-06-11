@@ -1,0 +1,2 @@
+The model should process the requirements the user will paste in into user stories only.
+It should include information only relevant to each user story.
