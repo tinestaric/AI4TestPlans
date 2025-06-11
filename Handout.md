@@ -88,3 +88,25 @@ Compare outcomes:
 - Was it easier to guide?
 
 ---
+
+## 🤝 Step 4 – Peer Feedback (ATDD Lens)
+
+Share your results with a peer or group. Use this checklist to evaluate the output:
+
+| ✅ Criteria                                  | Yes / No | Comments |
+|--------------------------------------------|----------|----------|
+| Clear and actionable test plan?             | ✅ / ❌  |          |
+| Matches acceptance criteria?                | ✅ / ❌  |          |
+| Covers edge cases or boundaries?            | ✅ / ❌  |          |
+| Testable/measurable language?               | ✅ / ❌  |          |
+| No vague or redundant parts?                | ✅ / ❌  |          |
+
+---
+
+## 🔁 Step 5 – Improve Prompt Using Feedback
+
+```
+<space for improved prompt>
+```
+
+---
