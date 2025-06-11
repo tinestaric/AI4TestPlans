@@ -41,3 +41,36 @@
 - Was the generated plan immediately actionable for a tester, or would it require significant refinement?
 
 ---
+
+## 🧱 Step 2 – Add Structure to Your Prompt
+**Use the 5 prompt components to refine your input.**
+
+> 💡 For more on structuring prompts, see ["How to be a Prompt Engineer" (YouTube)](https://www.youtube.com/watch?v=q8xpDwjyNLY)
+
+| Component            | Purpose | Your Version | Example |
+|---------------------|---------|--------------|---------|
+| **Instructions**     | What you want it to do | | "Create a comprehensive test plan for the following user story" |
+| **Steps**            | Break it down if needed | | "1. Analyze the user story 2. Identify test scenarios 3. Define test cases" |
+| **Format Requirements** | How to structure output | | "Use Gherkin syntax with Given-When-Then format" |
+| **Examples**         | Show desired output style | | "Example: Given a user is logged in, When they click logout, Then they should be redirected to login page" |
+| **Notes**            | Constraints and context | | "Focus on edge cases, include both positive and negative scenarios" |
+
+### 💡 Pro Tips:
+- Be specific about what you want
+- Use action verbs (analyze, create, evaluate)
+- Specify the format explicitly
+- Include quality criteria
+
+**📝 Final Prompt (with structure):**
+```
+<space for writing or pasting prompt>
+```
+
+**🔄 Compare Outputs:**
+Run your structured prompt. How does the output compare to the one from your "cold prompt" in Step 1?
+- Is it more comprehensive?
+- Is the formatting better?
+- Did it follow your instructions more closely?
+
+---
+
